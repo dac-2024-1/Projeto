@@ -7,13 +7,16 @@ Esse repositório contém código e configurações base para as atividades/proj
 
 # Executando
 
-Ao fazer o clone do repositório, abra o terminal no diretório do projeto e execute os comandos
+Ao fazer o clone do repositório, abra o terminal no diretório do projeto e execute os comandos linha por linha.
 
-```
+```bash
 docker compose up 
 ./mvnw clean
 ./mvnw install
 ./mvnw spring-boot:run
 ```
 
-Pode ser que o comando do docker seja docker-compose na sua máquina.
+# Resolução de problemas
+- Pode ser que o comando do docker seja `docker-compose` (com hífen) na sua máquina. Faça o ajuste de acordo;
+- Pode ser que você tenha o PostgreSQL instalado na sua máquina. Se for esse o caso, altere o arquivo `docker-compose.yml`, substituindo o mapeamento da porta na linha 11 por outra porta além da `5432`. Exemplo utilizando a porta 5433: `5433:5432`. No caso de alterar essa porta, altere a URL de conexão no arquivo `application.properties`;
+- Em caso do erro "No compiler is provided in this environment" ao executar os comandos `mvnw`, verifique se a variável JAVA_HOME está definida no seu ambiente. Caso não esteja, siga [esse tutorial](https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)
