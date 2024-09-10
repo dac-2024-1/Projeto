@@ -1,9 +1,26 @@
-# Projeto Base
+# Projeto Loja de Calçados
 
-Esse repositório contém código e configurações base para as atividades/projetos da disciplina "Desenvolvimento de Aplicações Corporativas" do IFPB - Campus Cajazeiras. Os requisitos necessários para a execução desse projeto são:
+## Projeto para disciplina de Desenvolvimento de Aplicações Corporativas 2024.1
 
-- JDK versão 17. Download [aqui](https://www.oracle.com/br/java/technologies/downloads/#jdk17) ou use um gerenciador de versões como [SDKMAN!](https://sdkman.io/install) (Recomendado!)
-- [Docker](https://www.docker.com/products/docker-desktop/)
+Grupo: 
+
+- [Gabriella](https://github.com/gabs44)
+- [Marianna](https://github.com/MariLopes1223)
+- [Maria Clara](https://github.com/marysclair)
+- [Maurício](https://github.com/maueici0)
+- [Veríssimo](https://github.com/verissimon)
+
+## Descrição do projeto
+
+Este projeto elabora o sistema proposto para a gerência eficiente de uma loja de calçados. Ele permitirá que os usuários armazenem e
+acessem informações sobre os produtos da loja, estoque, clientes, vendas e outros dados
+relevantes.
+
+## Diagrama Entidade Relacionamento
+
+A imagem a seguir apresenta todas as tabelas e relacionamentos presentes na aplicação.
+
+![Diagrama Entidade-Relacionamento](assets/diagrama.png)
 
 # Executando
 
@@ -20,3 +37,4 @@ docker compose up
 - Pode ser que o comando do docker seja `docker-compose` (com hífen) na sua máquina. Faça o ajuste de acordo;
 - Pode ser que você tenha o PostgreSQL instalado na sua máquina. Se for esse o caso, altere o arquivo `docker-compose.yml`, substituindo o mapeamento da porta na linha 11 por outra porta além da `5432`. Exemplo utilizando a porta 5433: `5433:5432`. No caso de alterar essa porta, altere a URL de conexão no arquivo `application.properties`;
 - Em caso do erro "No compiler is provided in this environment" ao executar os comandos `mvnw`, verifique se a variável JAVA_HOME está definida no seu ambiente. Caso não esteja, siga [esse tutorial](https://www.baeldung.com/java-home-on-windows-mac-os-x-linux)
+
