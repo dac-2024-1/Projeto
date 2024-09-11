@@ -15,7 +15,8 @@ public class Estoque implements Serializable {
     private int quantidade;
 
     private int numeracao;
-    
+
+
     @ManyToOne
     private Produto produto;
 
@@ -42,4 +43,8 @@ public class Estoque implements Serializable {
     public void setNumeracao(int numeracao) {
         this.numeracao = numeracao;
     }
+
+    public Produto getProduto() { return produto; }
+
+    public void setProduto(Produto produto) { this.produto = produto; }
 }
