@@ -7,9 +7,7 @@ import java.io.Serializable;
 @Entity
 @DiscriminatorValue("vendaAPrazo")
 public class VendaAPrazo extends Venda {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+
     private Float acrescimoDoValor;
     private int numeroParcelas;
 
