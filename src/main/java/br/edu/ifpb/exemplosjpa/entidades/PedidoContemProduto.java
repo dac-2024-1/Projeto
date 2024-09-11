@@ -54,4 +54,12 @@ public class PedidoContemProduto implements Serializable {
     public void setQuantIndv(Float quantIndv) {
         this.quantIndv = quantIndv;
     }
+
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
 }

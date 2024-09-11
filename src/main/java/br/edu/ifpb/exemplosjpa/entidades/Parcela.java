@@ -41,4 +41,20 @@ public class Parcela implements Serializable {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public VendaAPrazo getVendaAPrazo() {
+        return vendaAPrazo;
+    }
+
+    public void setVendaAPrazo(VendaAPrazo vendaAPrazo) {
+        this.vendaAPrazo = vendaAPrazo;
+    }
+
+    public RegistroFinanceiro getRegistroFinanceiro() {
+        return registroFinanceiro;
+    }
+
+    public void setRegistroFinanceiro(RegistroFinanceiro registroFinanceiro) {
+        this.registroFinanceiro = registroFinanceiro;
+    }
 }
